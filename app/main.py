@@ -113,7 +113,7 @@ def scrape_playlist(args):
 
     with open(args.outpath, 'w') as outfile:
         for track in tracks:
-            outfile.write('%s %s\n' % (track['name'], track['artist']))
+            outfile.write('%s - %s\n' % (track['name'], track['artist']))
 
 def main():
     args = parse_args()
